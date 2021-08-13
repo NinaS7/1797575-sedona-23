@@ -1,0 +1,16 @@
+.page {
+  width: 320px;
+  height: 100%;
+  background-color: #F2F2F2; /* для лучшей видимости */
+}
+
+.page__body {
+  width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: "PT Sans",Arial,sans-serif;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+}

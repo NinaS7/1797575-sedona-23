@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+// Global
+@import "global/normalize";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+//Blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+@import "blocks/page-main.scss";
+@import "blocks/salutation.scss";
+@import "blocks/opinion.scss";
+@import "blocks/reasons-all.scss";
+@import "blocks/reason-first.scss";
+@import "blocks/recommendations.scss";
+@import "blocks/reason-second.scss";
+@import "blocks/reasons.scss";
+@import "blocks/search.scss";
+@import "blocks/map.scss";
+
+@import "blocks/main-form.scss";
+@import "blocks/back-wrapper.scss";
+@import "blocks/intro.scss";
+@import "blocks/form-comment.scss";
+@import "blocks/form.scss";
+@import "blocks/part.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal-failure.scss";
+@import "blocks/modal-success.scss";
+
+@import "blocks/main-catalog.scss";
+@import "blocks/photos.scss";
+@import "blocks/post.scss";
+@import "blocks/video.scss";
+
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
