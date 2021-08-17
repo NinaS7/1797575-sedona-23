@@ -1,8 +1,14 @@
 .page-footer {
   color: #000000;
   background-color: #FFFFFF;
+  text-align: center;
 }
 
-.page-footer__wrapper {
-  margin-top: 10px;
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 120px;
+    align-items: center;
+  }
 }

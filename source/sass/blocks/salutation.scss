@@ -1,8 +1,13 @@
 .salutation {
   width: 901px;
   height: 389px;
+  margin: 0 auto;
   background-color: #766357;
   background-image: url(../img/back-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.salutation img {
+  margin: 0 auto;
 }

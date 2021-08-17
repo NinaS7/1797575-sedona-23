@@ -16,4 +16,12 @@
   width: 280px;
   margin: 0 20px;
   padding: 15px 32px 17px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .search__button {
+    width: 458px;
+  }
 }
