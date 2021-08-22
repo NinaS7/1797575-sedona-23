@@ -1,8 +1,38 @@
 .back-wrapper {
-  width: 902px;
+  width: 320px;
   height: 214px;
   background-color: #766357;
   background-image: url(../img/back-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.back-wrapper img {
+  margin: 0 auto;
+  width: 229px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .back-wrapper {
+    width: 768px;
+    height: 290px;
+  }
+
+  .back-wrapper img {
+    width: 457px;
+    height: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .back-wrapper {
+    width: 1200px;
+    height: 301px;
+  }
+
+  .back-wrapper img {
+    width: 460px;
+    height: 80px;
+  }
 }

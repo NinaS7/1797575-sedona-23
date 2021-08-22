@@ -1,0 +1,37 @@
+.part-emotions {
+  border: 0;
+}
+
+.part-emotions__heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.part-emotions__comment {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  background-color: #F2F2F2;
+  width: 279px;
+  min-height: 160px;
+  margin-bottom: 51px;
+}
+
+@media (min-width: $tablet-width) {
+  .part-emotions {
+    order: 5;
+  }
+
+  .part-emotions__comment {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .part-emotions__comment {
+    width: 960px;
+  }
+}

@@ -1,0 +1,16 @@
+.form-comment {
+  width: 279px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form-comment {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-comment {
+    width: 960px;
+  }
+}

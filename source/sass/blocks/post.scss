@@ -5,8 +5,37 @@
 
 .post__text p {
   text-transform: none;
+  margin: 0;
 }
 
 .post__likes {
   font-weight: 700;
+  display: flex;
 }
+
+.post__likes img {
+  width: 23px;
+  height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    margin: 0;
+  }
+
+  .post__text {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__text {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3)
+  }
+}
+

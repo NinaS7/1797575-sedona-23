@@ -4,3 +4,48 @@
   font-weight: 700;
   text-transform: none;
 }
+
+.form__part {
+  width: 280px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.form__button {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.form__legend {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__button {
+    order: 6;
+    width: 324px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 61px;
+  }
+
+  .form__legend {
+    display: block;
+    order: 7;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    width: 480px;
+    margin-bottom: 66px;
+  }
+}
+
