@@ -2,17 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="../img/logotype-mobile.png" width="102" height="84" alt=" Логотип сайта города Седона">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img src="../img/logotype-mobile.png" width="102" height="84" alt=" Логотип сайта города Седона">
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -42,84 +42,86 @@
       </section>
       <section class="form-comment">
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__part part">
-            <legend class="part__heading">Представьтесь:</legend>
-            <p class="part__text">
+          <fieldset class="form__part part-name">
+            <legend class="part-name__heading">Представьтесь:</legend>
+            <p class="part-name__text">
               <label for="name">Имя*:</label>
               <input id="name" type="text" name="name" placeholder="Петр">
             </p>
-            <p class="part__text">
+            <p class="part-name__text">
               <label for="surname">Фамилия*:</label>
               <input id="surname" type="text" name="surname" placeholder="Иванов">
             </p>
-            <p class="part__text">
+            <p class="part-name__text">
               <label for="patronymic">Отчество:</label>
               <input id="patronymic" type="text" name="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
-          <fieldset class="form__part part">
-            <legend class="part__heading">Контактная информация:</legend>
-            <p class="part__text">
-              <label for="phone">Контактный телефон*:</label>
-              <input id="phone" type="tel" name="phone" placeholder="Введите телефон">
-              <button class="part__button" type="button" aria-label="Телефон">
-                <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" fill="#010101"/>
-                </svg>
-              </button>
-            </p>
-            <p class="part__text">
-              <label for="mail">Электронная почта*:</label>
-              <input id="mail" type="email" name="mail" placeholder="Введите e-mail">
-              <button class="part__button" type="button" aria-label="Почта">
-                <svg width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1z" fill="#000"/>
-                </svg>
-              </button>
-            </p>
+          <fieldset class="form__part part-contacts">
+            <legend class="part-contacts__heading">Контактная информация:</legend>
+            <div class="part-contacts__info">
+              <p class="part-contacts__text">
+                <label for="phone">Контактный телефон*:</label>
+                <input id="phone" type="tel" name="phone" placeholder="Введите телефон">
+                <button class="part-contacts__button" type="button" aria-label="Телефон">
+                  <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" fill="#010101"/>
+                  </svg>
+                </button>
+              </p>
+              <p class="part-contacts__text">
+                <label for="mail">Электронная почта*:</label>
+                <input id="mail" type="email" name="mail" placeholder="Введите e-mail">
+                <button class="part-contacts__button" type="button" aria-label="Почта">
+                  <svg width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1z" fill="#000"/>
+                  </svg>
+                </button>
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form__part part">
-            <legend class="part__heading">Ваше общее впечатление:</legend>
-            <ul class="part__list">
-              <li class="part__item">
-                <input class="part__input-radio" id="positive" type="radio" name="positive" checked>
+          <fieldset class="form__part part-impression">
+            <legend class="part-impression__heading">Ваше общее впечатление:</legend>
+            <ul class="part-impression__list">
+              <li class="part-impression__item">
+                <input class="part-impression__input-radio" id="positive" type="radio" name="positive" checked>
                 <label for="positive">Скорее положительное</label>
               </li>
-              <li class="part__item">
-                <input class="part__input-radio" id="negative" type="radio" name="negative">
+              <li class="part-impression__item">
+                <input class="part-impression__input-radio" id="negative" type="radio" name="negative">
                 <label for="negative">Скорее отрицательное</label>
               </li>
-              <li class="part__item">
-                <input class="part__input-radio" id="difficult" type="radio" name="difficult">
+              <li class="part-impression__item">
+                <input class="part-impression__input-radio" id="difficult" type="radio" name="difficult">
                 <label for="difficult">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__part part">
-            <legend class="part__heading">Посещенные достопримечательности:</legend>
-            <ul class="part__list">
-              <li class="part__item">
-                <input class="part__input-checkbox" id="bridge" type="checkbox" name="bridge" checked>
+          <fieldset class="form__part part-place">
+            <legend class="part-place__heading">Посещенные достопримечательности:</legend>
+            <ul class="part-place__list">
+              <li class="part-place__item">
+                <input class="part-place__input-checkbox" id="bridge" type="checkbox" name="bridge" checked>
                 <label for="bridge">Мост Дьявола</label>
               </li>
-              <li class="part__item">
-                <input class="part__input-checkbox" id="hill" type="checkbox" name="hill" checked>
+              <li class="part-place__item">
+                <input class="part-place__input-checkbox" id="hill" type="checkbox" name="hill" checked>
                 <label for="hill">Гора-Колокол</label>
               </li>
-              <li class="part__item">
-                <input class="part__input-checkbox" id="park" type="checkbox" name="park" checked>
+              <li class="part-place__item">
+                <input class="part-place__input-checkbox" id="park" type="checkbox" name="park" checked>
                 <label for="park">Слайд-парк</label>
               </li>
-              <li class="part__item">
-                <input class="part__input-checkbox" id="rocks" type="checkbox" name="rocks">
+              <li class="part-place__item">
+                <input class="part-place__input-checkbox" id="rocks" type="checkbox" name="rocks">
                 <label for="rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__part part">
-            <legend class="part__heading">Опишите свои эмоции:</legend>
+          <fieldset class="form__part part-emotions">
+            <legend class="part-emotions__heading">Опишите свои эмоции:</legend>
             <label for="comment"></label>
-            <textarea class="part__comment" id="comment" name="comment" rows="6">Опишите подробно все свои восторги</textarea>
+            <textarea class="part-emotions__comment" id="comment" name="comment" rows="6">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить отзыв</button>
           <span class="form__legend">* - обязательные поля</span>

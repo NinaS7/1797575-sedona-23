@@ -1,13 +1,28 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .social__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: #81B3D2;
+  margin: 3px;
+  align-items: center;
 }
 
 .social__link {
-  width: 46px;
-  height: 48px;
-  color: #FFFFFF;
-  background-color: #81B3D2;
   text-decoration: none;
-  margin: 3px;
+  display: block;
+  padding: 16px;
 }

@@ -5,8 +5,34 @@
   line-height: 21px;
 }
 
+.reason-second__info {
+  height: 191px;
+  text-align: center;
+}
+
 .reason-second__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0;
+  padding-top: 39px;
+}
+
+.reason-second__namber {
+  margin: 0;
+}
+
+.reason-second__description {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reason-second {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .reason-second__info {
+    order: 2;
+  }
 }

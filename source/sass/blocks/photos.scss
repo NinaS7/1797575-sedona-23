@@ -16,3 +16,35 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .photos__item {
+    border: none;
+    width: 324px;
+  }
+
+  .photos__item:first-child {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__list {
+    width: 1200px;
+  }
+
+  .photos__item {
+    width: 400px;
+  }
+
+  .photos__item:first-child {
+    width: 1200px;
+  }
+}

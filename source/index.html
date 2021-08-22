@@ -2,17 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="../img/logotype-mobile.png" width="102" height="84" alt="Логотип сайта города Седона">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img src="../img/logotype-mobile.png" width="102" height="84" alt="Логотип сайта города Седона">
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
@@ -49,32 +49,36 @@
       <section class="reasons-all">
         <h2 class="visually-hidden">Причины</h2>
         <div class="reason-first">
-          <h3 class="reason-first__title">Настоящий городок</h3>
-          <p class="reason-first__namber">- №1 -</p>
-          <p class="reason-first__description">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
-          <img class="reason-first__image" src="../img/photo-city.jpg" width="520" height="260" alt="Улицы города">
-          <div class="recommendations">
-            <h4 class="visually-hidden">Рекомендации</h2>
-            <ul class="recommendations__list">
-              <li class="recommendations__item recommendations__item--housing">
-                <h5 class="recommendations__title">Жилье</h3>
-                <p class="recommendations__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="recommendations__item recommendations__item--food">
-                <h5 class="recommendations__title">Еда</h3>
-                <p class="recommendations__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="recommendations__item recommendations__item--souvenirs">
-                <h5 class="recommendations__title">Сувениры</h3>
-                <p class="recommendations__description">Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
+          <div class="reason-first__info">
+            <h3 class="reason-first__title">Настоящий городок</h3>
+            <p class="reason-first__namber">- №1 -</p>
+            <p class="reason-first__description">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
           </div>
+          <img class="reason-first__image" src="../img/photo-city.jpg" width="520" height="260" alt="Улицы города">
+        </div>
+        <div class="recommendations">
+          <h4 class="visually-hidden">Рекомендации</h2>
+          <ul class="recommendations__list">
+            <li class="recommendations__item recommendations__item--housing">
+              <h5 class="recommendations__title">Жилье</h3>
+              <p class="recommendations__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="recommendations__item recommendations__item--food">
+              <h5 class="recommendations__title">Еда</h3>
+              <p class="recommendations__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="recommendations__item recommendations__item--souvenirs">
+              <h5 class="recommendations__title">Сувениры</h3>
+              <p class="recommendations__description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </div>
         <div class="reason-second">
-          <h3 class="reason-second__title">Там есть мост дьявола</h3>
-          <p class="reason-second__namber">- №2 -</p>
-          <p class="reason-second__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="reason-second__info">
+            <h3 class="reason-second__title">Там есть мост дьявола</h3>
+            <p class="reason-second__namber">- №2 -</p>
+            <p class="reason-second__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
           <img class="reason-second__image" src="../img/photo-bridge.jpg" width="520" height="260" alt="Каньон">
         </div>
         <div class="reasons">

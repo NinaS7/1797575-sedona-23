@@ -1,0 +1,46 @@
+.part-place {
+  border: 0;
+  margin: 0;
+}
+
+.part-place__heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.part-place__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.part-place__item {
+  margin-bottom: 54px;
+}
+
+@media (min-width: $tablet-width) {
+  .part-place {
+    width: 648px;
+    order: 4;
+  }
+
+  .part-place__item {
+    width: 260px;
+  }
+
+  .part-place__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .part-place {
+    width: 960px;
+  }
+
+  .part-place__item {
+    width: 240px;
+  }
+}

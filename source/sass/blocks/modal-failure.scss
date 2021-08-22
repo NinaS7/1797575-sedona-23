@@ -2,3 +2,18 @@
   width: 320px;
   min-height: 280px;
 }
+
+.modal-failure__button {
+  width: 180px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure {
+    width: 400px;
+    min-height: 347px;
+  }
+
+  .modal-failure__button {
+    width: 272px;
+  }
+}

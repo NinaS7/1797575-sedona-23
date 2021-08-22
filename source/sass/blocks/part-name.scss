@@ -1,0 +1,35 @@
+.part-name {
+  border: none;
+}
+
+.part-name__heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.part-name__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.part-name__text label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.part-name__text input {
+  background-color: #F2F2F2;
+  border: none;
+  height: 58px;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .part-name {
+    width: 324px;
+    order: 2;
+  }
+}
