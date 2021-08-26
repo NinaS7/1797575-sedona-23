@@ -1,3 +1,24 @@
 .page-header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+
+.page-header__logo img {
+  width: 102px;
+  height: 84px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    width: 187px;
+    height: 97px;
+  }
 }

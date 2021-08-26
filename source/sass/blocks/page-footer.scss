@@ -1,7 +1,13 @@
 .page-footer {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
+  min-height: 233px;
+}
+
+.page-footer__wrapper {
+  padding: 0;
+  bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
