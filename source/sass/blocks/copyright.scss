@@ -1,0 +1,22 @@
+.copyright {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright__text {
+  padding-right: 15px;
+}
+
+.copyright__link {
+  position: absolute;
+  top: -7px;
+  color: #000000;
+}
+
+.copyright__link:hover {
+  color: #81b3d2;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

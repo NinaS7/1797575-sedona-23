@@ -1,11 +1,39 @@
+.opinion {
+  width: 285px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
 .opinion__slogan {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: 32px;
 }
 
 .opinion__info {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .opinion {
+    width: 520px;
+  }
+
+  .opinion__slogan {
+    font-size: 21px;
+    margin-top: 43px;
+  }
+
+  .opinion__slogan br {
+    display: none;
+  }
+
+  .opinion__info {
+    margin-bottom: 53px;
+  }
 }

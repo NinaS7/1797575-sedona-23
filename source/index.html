@@ -9,10 +9,10 @@
   <body class="page__body">
 
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img src="../img/logotype-mobile.png" width="102" height="84" alt="Логотип сайта города Седона">
-        </a>
+      <a class="page-header__logo">
+        <img src="../img/logotype-mobile.png" width="102" height="84" alt="Логотип сайта города Седона">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
@@ -38,77 +38,73 @@
         <img src="../img/text-index.svg" width="282" height="214" alt="Welcome to Sedona">
       </section>
       <div class="opinion">
-        <p class="opinion__slogan">
-          Седона - небольшой городок в Аризоне,<br>
-          заслуживающий большего!
-        </p>
-        <p class="opinion__info">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
-        </p>
+        <p class="opinion__slogan">Седона - небольшой <br>городок в Аризоне, <br>заслуживающий большего!</p>
+        <p class="opinion__info">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </div>
       <section class="reasons-all">
         <h2 class="visually-hidden">Причины</h2>
         <div class="reason-first">
           <div class="reason-first__info">
-            <h3 class="reason-first__title">Настоящий городок</h3>
+            <h3 class="reason-first__title">Настоящий <br>городок</h3>
             <p class="reason-first__namber">- №1 -</p>
-            <p class="reason-first__description">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
+            <p class="reason-first__description">Седона не аттракцион для туристов, <br>там течет своя жизнь</p>
           </div>
           <img class="reason-first__image" src="../img/photo-city.jpg" width="520" height="260" alt="Улицы города">
         </div>
         <div class="recommendations">
-          <h4 class="visually-hidden">Рекомендации</h2>
+          <h4 class="visually-hidden">Рекомендации</h4>
           <ul class="recommendations__list">
             <li class="recommendations__item recommendations__item--housing">
-              <h5 class="recommendations__title">Жилье</h3>
-              <p class="recommendations__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="recommendations__item recommendations__item--food">
-              <h5 class="recommendations__title">Еда</h3>
-              <p class="recommendations__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h5 class="recommendations__title">Жилье</h5>
+              <p class="recommendations__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="recommendations__item recommendations__item--souvenirs">
-              <h5 class="recommendations__title">Сувениры</h3>
-              <p class="recommendations__description">Не только китайского, но и местного производства!</p>
+              <h5 class="recommendations__title">Сувениры</h5>
+              <p class="recommendations__description">Не только китайского, <br>но и местного производства!</p>
+            </li>
+            <li class="recommendations__item recommendations__item--food">
+              <h5 class="recommendations__title">Еда</h5>
+              <p class="recommendations__description">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
             </li>
           </ul>
         </div>
         <div class="reason-second">
           <div class="reason-second__info">
-            <h3 class="reason-second__title">Там есть мост дьявола</h3>
+            <h3 class="reason-second__title">Там есть <br>мост дьявола</h3>
             <p class="reason-second__namber">- №2 -</p>
-            <p class="reason-second__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="reason-second__description">Да, по нему можно пройти! <br>Если вы осмелитесь, конечно</p>
           </div>
           <img class="reason-second__image" src="../img/photo-bridge.jpg" width="520" height="260" alt="Каньон">
         </div>
         <div class="reasons">
-        <ol class="reasons__list">
-          <li class="reasons__item">
-            <h3 class="reasons__title">Небольшая площадь</h3>
-            <p class="reasons__namber">- №3 -</p>
-            <p class="reasons__description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__title">Красивая дорога</h3>
-            <p class="reasons__namber">- №4 -</p>
-            <p class="reasons__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__title">Мало туристов</h3>
-            <p class="reasons__namber">- №5 -</p>
-            <p class="reasons__description">Большинство едет в Гранд каньон и толпится там</p>
-          </li>
-        </ol>
+          <ol class="reasons__list">
+            <li class="reasons__item reasons__item--nomber3">
+              <h3 class="reasons__title">Небольшая <br>площадь</h3>
+              <p class="reasons__namber">- №3 -</p>
+              <p class="reasons__description">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="reasons__item reasons__item--nomber4">
+              <h3 class="reasons__title">Красивая <br>дорога</h3>
+              <p class="reasons__namber">- №4 -</p>
+              <p class="reasons__description">Ехать в седону из <br>Лас-Вегаса совсем <br>не&nbsp;скучно!</p>
+            </li>
+            <li class="reasons__item  reasons__item--nomber5">
+              <h3 class="reasons__title">Мало <br>туристов</h3>
+              <p class="reasons__namber">- №5 -</p>
+              <p class="reasons__description">Большинство едет в Гранд каньон и толпится там</p>
+            </li>
+          </ol>
+        </div>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="search__question">Заинтересовались?</p>
-        <p class="search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <button class="search__button button" type="submit" aria-label="Поиск гостиницы" >Найти гостиницу</button>
+        <p class="search__info">Укажите предполагаемые даты поездки,&nbsp;<br>и&nbsp;мы покажем вам лучшие предложения гостиниц&nbsp;в&nbsp;Cедоне</p>
+        <button class="search__button button" type="submit" aria-label="Поиск гостиницы">Найти гостиницу</button>
       </section>
       <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <img src="../img/map-mobile.jpg" width="320" height="350" alt="Седона на карте"></src>
+          <img src="../img/map-mobile.jpg" width="320" height="350" alt="Седона на карте">
       </section>
     </main>
 
@@ -143,7 +139,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано:</span>
+          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/>
@@ -152,6 +148,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
   </body>
 </html>

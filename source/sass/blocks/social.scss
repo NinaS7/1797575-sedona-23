@@ -14,15 +14,25 @@
 }
 
 .social__item {
-  width: 46px;
-  height: 48px;
-  background-color: #81B3D2;
   margin: 3px;
-  align-items: center;
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  display: block;
-  padding: 16px;
+  width: 46px;
+  height: 48px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
