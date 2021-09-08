@@ -6,15 +6,18 @@
 }
 
 .form__part {
-  width: 280px;
-  padding: 0;
+  padding: 0 20px;
   margin: 0 auto;
+  border-top: 1px solid #e5e5e5;
 }
 
 .form__button {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 20px;
   margin-bottom: 48px;
+  padding:18px 33px 14px 32px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .form__legend {

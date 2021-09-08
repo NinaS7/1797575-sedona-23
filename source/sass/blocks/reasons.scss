@@ -1,5 +1,5 @@
 .reasons {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   font-size: 14px;
   line-height: 21px;
 }
@@ -9,6 +9,16 @@
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.reasons__item {
+  margin: 0 20px;
+  padding: 25px 15px 24px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.reasons__item:last-child {
+  border: none;
 }
 
 .reasons__title {
@@ -21,5 +31,37 @@
   .reasons__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    min-height: 256px;
+  }
+
+  .reasons__item {
+    padding: 0;
+    padding-top: 42px;
+    margin: 0;
+    border: none;
+  }
+
+  .reasons__item--nomber3 {
+    padding-left: 33px;
+    padding-right: 34px;
+  }
+
+  .reasons__item--nomber4 {
+    padding-left: 46px;
+    padding-right: 48px;
+  }
+
+  .reasons__item--nomber5 {
+    padding-left: 41px;
+    padding-right: 40px;
+  }
+  .reasons__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__description br{
+    display: none;
   }
 }

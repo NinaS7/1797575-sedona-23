@@ -1,13 +1,13 @@
 .reason-second {
-  color: #FFFFFF;
-  background-color: #81B3D2;
+  color: #ffffff;
+  background-color: #81b3d2;
   font-size: 14px;
   line-height: 21px;
 }
 
 .reason-second__info {
-  height: 191px;
   text-align: center;
+  padding: 39px 10px 35px;
 }
 
 .reason-second__title {
@@ -15,11 +15,7 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
-  padding-top: 39px;
-}
 
-.reason-second__namber {
-  margin: 0;
 }
 
 .reason-second__description {
@@ -34,5 +30,25 @@
 
   .reason-second__info {
     order: 2;
+    width: 184px;
+    margin: 43px 36px 41px;
+    padding: 0;
+  }
+
+  .reason-second__title {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: $desktop-no-width) {
+  .reason-second__description br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-second__info {
+    width: 256px;
+    margin: 51px 78px 53px 79px;
   }
 }

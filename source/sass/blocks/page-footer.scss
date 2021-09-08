@@ -1,20 +1,40 @@
 .page-footer {
   color: #000000;
   background-color: #ffffff;
-  text-align: center;
-  min-height: 233px;
 }
 
 .page-footer__wrapper {
   padding: 0;
   bottom: 0;
+  min-height: 233px;
+  text-align: center;
+}
+
+.page-footer__contacts {
+  margin-top: 29px;
+  margin-bottom: 33px;
+}
+
+.page-footer__copyright {
+  margin-top: 45px;
+  margin-bottom: 26px;
+  padding-right: 25px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 120px;
     align-items: center;
+    min-height: 120px;
+  }
+
+  .page-footer__contacts {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
   }
 }

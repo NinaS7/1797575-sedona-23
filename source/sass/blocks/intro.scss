@@ -1,10 +1,18 @@
 .intro {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  min-height: 151px;
 }
 
 .intro__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: 36px;
+
+}
+
+.intro__text {
+  margin-bottom: 16px;
 }
