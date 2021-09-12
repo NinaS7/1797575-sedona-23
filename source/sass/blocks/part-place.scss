@@ -84,8 +84,8 @@
     position: absolute;
     width: 123px;
     height: 1px;
-    top: 12px;
-    left: 315px;
+    top: 20px;
+    left: 355px;
     background-color: #dbdbdb;
   }
 
@@ -107,12 +107,21 @@
     padding: 0;
   }
 
+  .part-place__heading {
+    position: relative;
+  }
+
   .part-place__heading::before {
+    content: "";
+    position: absolute;
     width: 280px;
   }
 
   .part-place__heading::after {
+    content: "";
+    position: absolute;
     width: 280px;
+    top: 20px;
     left: 365px;
   }
 

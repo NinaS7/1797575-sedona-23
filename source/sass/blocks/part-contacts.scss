@@ -60,6 +60,7 @@
     padding: 0;
     border: none;
     margin-bottom: 27px;
+    margin-top: 72px;
   }
 
   .part-contacts__heading {
@@ -74,7 +75,7 @@
     width: 123px;
     height: 1px;
     top: 12px;
-    right: 355px;
+    right: 340px;
     background-color: #dbdbdb;
   }
 
@@ -84,7 +85,7 @@
     width: 123px;
     height: 1px;
     top: 12px;
-    left: 315px;
+    left: 335px;
     background-color: #dbdbdb;
   }
 
@@ -107,9 +108,13 @@
 @media (min-width: $desktop-width) {
   .part-contacts__heading {
     margin-bottom: 71px;
+    margin-top: 70px;
+    position: relative;
   }
 
   .part-contacts__heading::before {
+    content: "";
+    position: absolute;
     width: 280px;
   }
 

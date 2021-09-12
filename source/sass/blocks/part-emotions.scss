@@ -24,6 +24,7 @@
 @media (min-width: $tablet-width) {
   .part-emotions {
     order: 5;
+    padding: 0;
   }
 
   .part-emotions__heading {
@@ -39,7 +40,7 @@
     width: 123px;
     height: 1px;
     top: 12px;
-    right: 340px;
+    right: 325px;
     background-color: #dbdbdb;
   }
 
@@ -49,7 +50,7 @@
     width: 123px;
     height: 1px;
     top: 12px;
-    left: 315px;
+    left: 325px;
     background-color: #dbdbdb;
   }
 
@@ -65,15 +66,24 @@
   }
 
   .part-emotions__comment {
-    width: 960px;
+    width: 930px;
+  }
+
+  .part-emotions__heading {
+    position: relative;
   }
 
   .part-emotions__heading::before {
-  width: 280px;
+    content: "";
+    position: absolute;
+    width: 280px;
   }
 
   .part-emotions__heading::after {
-  width: 280px;
-  left: 325px;
+    content: "";
+    position: absolute;
+    width: 280px;
+    top: 10px;
+    left: 325px;
   }
 }
