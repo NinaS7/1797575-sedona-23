@@ -72,9 +72,12 @@
   .recommendations__item--housing {
     padding: 158px 35px 0 36px;
     order: 1;
+    position: relative;
   }
 
   .recommendations__item--housing::before {
+    content: "";
+    position: absolute;
     width: 75px;
     height: 72px;
     top: 60px;
@@ -84,9 +87,12 @@
   .recommendations__item--food {
     padding: 158px 38px 0;
     order: 2;
+    position: relative;
   }
 
   .recommendations__item--food::before {
+    content: "";
+    position: absolute;
     width: 76px;
     height: 68px;
     top: 65px;
@@ -96,9 +102,12 @@
   .recommendations__item--souvenirs {
     padding: 158px 31px 0 32px;
     order: 3;
+    position: relative;
   }
 
   .recommendations__item--souvenirs::before {
+    content: "";
+    position: absolute;
     width: 64px;
     height: 75px;
     top: 55px;
@@ -127,9 +136,12 @@
 
   .recommendations__item--housing {
     padding: 159px 60px 0 58px;
+    position: relative;
   }
 
   .recommendations__item--housing::before {
+    content: "";
+    position: absolute;
     width: 75px;
     height: 72px;
     top: 60px;
@@ -138,9 +150,12 @@
 
   .recommendations__item--food {
     padding: 157px 43px 0 44px;
+    position: relative;
   }
 
   .recommendations__item--food::before {
+    content: "";
+    position: absolute;
     width: 76px;
     height: 68px;
     top: 65px;
@@ -149,9 +164,12 @@
 
   .recommendations__item--souvenirs {
     padding: 158px 78px 0;
+    position: relative;
   }
 
   .recommendations__item--souvenirs::before {
+    content: "";
+    position: absolute;
     width: 64px;
     height: 75px;
     top: 55px;

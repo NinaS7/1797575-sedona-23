@@ -1,11 +1,11 @@
 .part-place {
-  border: 0;
   margin: 0;
 }
 
 .part-place__heading {
   text-transform: uppercase;
   text-align: center;
+  padding-top: 15px;
   margin-bottom: 36px;
 }
 
@@ -19,28 +19,122 @@
   margin-bottom: 54px;
 }
 
+.part-place__item:last-child {
+  margin-bottom: 39px;
+}
+
+.part-place__item label {
+  padding-left: 79px;
+  position: relative;
+}
+
+.part-place__input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  left: 0;
+  top: -20px;
+  border: 5px solid #f2f2f2;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.part-place__input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  left: 18px;
+  top: 0;
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .part-place {
     width: 648px;
     order: 4;
+    border: none;
+    margin-bottom: 30px;
   }
 
-  .part-place__item {
-    width: 260px;
+  .part-place__heading {
+    font-size: 21px;
+    width: 308px;
+    margin-bottom: 58px;
+    padding: 0;
+    position: relative;
   }
+
+  .part-place__heading::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 22px;
+    right: 355px;
+    background-color: #dbdbdb;
+  }
+
+  .part-place__heading::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 20px;
+    left: 355px;
+    background-color: #dbdbdb;
+  }
+
 
   .part-place__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .part-place__item {
+    width: 260px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .part-place {
     width: 960px;
+    padding: 0;
+  }
+
+  .part-place__heading {
+    position: relative;
+  }
+
+  .part-place__heading::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+  }
+
+  .part-place__heading::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    top: 20px;
+    left: 365px;
+  }
+
+  .part-place__list {
+    display: flex;
+    justify-content: space-between;
   }
 
   .part-place__item {
-    width: 240px;
+    width: 230px;
+  }
+
+  .part-place__item:last-child {
+    text-align: end;
   }
 }

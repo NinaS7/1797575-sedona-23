@@ -1,16 +1,39 @@
 .modal-failure {
   width: 320px;
   min-height: 280px;
+  text-align: center;
+}
+
+.modal-failure__info {
+  font-size: 14px;
+  line-height: 24px;
+  width: 237px;
+  margin: 0 auto;
 }
 
 .modal-failure__button {
+  font-size: 18px;
   width: 180px;
+  margin-top: 22px;
+  padding-top: 16px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
   .modal-failure {
     width: 400px;
     min-height: 347px;
+  }
+
+  .modal-failure h2 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 220px;
+    margin-left: 100px;
+  }
+
+  .modal-failure__info {
+    width: 307px;
   }
 
   .modal-failure__button {
