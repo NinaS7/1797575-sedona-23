@@ -6,6 +6,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 15px;
+  padding-top: 20px;
 }
 
 .part-emotions__comment {
@@ -16,7 +17,7 @@
   border-radius: 0;
   background-color: #F2F2F2;
   width: 279px;
-  min-height: 160px;
+  min-height: 118px;
   margin-bottom: 51px;
 }
 
@@ -25,13 +26,54 @@
     order: 5;
   }
 
+  .part-emotions__heading {
+    font-size: 21px;
+    position: relative;
+    padding: 0;
+    margin-bottom: 54px;
+  }
+
+  .part-emotions__heading::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    right: 340px;
+    background-color: #dbdbdb;
+  }
+
+  .part-emotions__heading::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: 315px;
+    background-color: #dbdbdb;
+  }
+
   .part-emotions__comment {
-    width: 648px;
+    width: 606px;
+    padding: 18px 21px 24px 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .part-emotions {
+    padding: 0;
+  }
+
   .part-emotions__comment {
     width: 960px;
+  }
+
+  .part-emotions__heading::before {
+  width: 280px;
+  }
+
+  .part-emotions__heading::after {
+  width: 280px;
+  left: 325px;
   }
 }

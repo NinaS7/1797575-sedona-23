@@ -6,9 +6,29 @@
 }
 
 .form__part {
-  padding: 0 20px;
   margin: 0 auto;
-  border-top: 1px solid #e5e5e5;
+  padding: 0 20px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form__part input {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.form__part input::placeholder {
+  color: #000000;
+}
+
+.form__part input:hover {
+  background-color: #e5e5e5;
+}
+
+.form__part input:focus {
+  background-color: #ffffff;
+  border: none;
+  outline: 4px solid #e5e5e5;
 }
 
 .form__button {
@@ -30,10 +50,17 @@
     flex-wrap: wrap;
   }
 
+  .form-part {
+    margin: 0;
+    padding: 0;
+  }
+
   .form__button {
     order: 6;
     width: 324px;
     padding: 0;
+    padding-top: 18px;
+    padding-bottom: 14px;
     margin: 0;
     margin-bottom: 61px;
   }
@@ -42,6 +69,10 @@
     display: block;
     order: 7;
     margin-left: auto;
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
 

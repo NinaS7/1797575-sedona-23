@@ -1,10 +1,27 @@
 .modal-success {
   width: 320px;
   min-height: 323px;
+  text-align: center;
+}
+
+.modal-success__info {
+  font-size: 14px;
+  line-height: 24px;
+  width: 244px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.modal-success__back {
+  background-color: #f2f2f2;
 }
 
 .modal-success__button {
+  font-size: 18px;
   width: 280px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  margin: 20px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,7 +30,17 @@
     min-height: 347px;
   }
 
+  .modal-success h2 {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .modal-success__info {
+    width: 444px;
+  }
+
   .modal-success__button {
     width: 458px;
+    margin: 44px 0;
   }
 }

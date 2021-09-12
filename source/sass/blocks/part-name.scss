@@ -1,16 +1,20 @@
 .part-name {
-  border: none;
+  padding-bottom: 5px;
 }
 
 .part-name__heading {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 19px;
+  padding-top: 20px;
 }
 
 .part-name__text {
   margin: 0;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .part-name__text label {
@@ -18,18 +22,81 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
+
 }
 
 .part-name__text input {
-  background-color: #F2F2F2;
-  border: none;
-  height: 58px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+}
+
+.part-name__name {
+  width: 67px;
+  padding-right: 141px;
+}
+
+.part-name__surname {
+  width: 88px;
+  padding-right: 82px;
+}
+
+.part-name__patronymic {
+  width: 152px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .part-name {
-    width: 324px;
     order: 2;
+    padding: 0;
+    margin: 0;
+    padding-left: 58px;
+    border: none;
+    margin-bottom: 72px;
+  }
+
+  .part-name__heading {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 54px;
+  }
+
+  .part-name input {
+    margin-left: 15px;
+  }
+
+  .part-name__name {
+    padding-right: 127px;
+  }
+
+  .part-name__surname {
+    padding-right: 68px;
+  }
+
+  .part-name__patronymic {
+    padding-right: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .part-name {
+    padding-left: 79px;
+    margin-bottom: 70px;
+  }
+
+  .part-name__name {
+    padding-right: 255px;
+  }
+
+  .part-name__surname {
+    padding-right: 195px;
+  }
+
+  .part-name__patronymic {
+    padding-right: 130px;
   }
 }
