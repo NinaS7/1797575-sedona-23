@@ -1,0 +1,124 @@
+.controls {
+  width: 280px;
+  margin-left: 20px;
+  margin-top: -45px;
+}
+
+.controls__scale {
+  position: relative;
+  height: 24px;
+  padding-top: 21px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.controls__line {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.controls__toggle {
+  position: absolute;
+  top: 17px;
+  left: 56px;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.controls__buttons {
+  height: 66px;
+  background-color: #f2f2f2;
+  display: flex;
+
+}
+
+.controls__button {
+  border: 0;
+  background-color: transparent;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.controls__button--replay {
+  width: 16px;
+  height: 20px;
+  padding: 0;
+  margin-left: 25px;
+  background-image: url("../img/replay.svg");
+}
+
+.controls__button--subtitles {
+  width: 32px;
+  height: 20px;
+  padding: 0;
+  margin-left: 133px;
+  background-image: url("../img/subtitles.svg");
+}
+
+.controls__button--fullscreen {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-left: 31px;
+  background-image: url("../img/fullscreen.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .controls {
+    width: 648px;
+    margin-top: -93px;
+    position: absolute;
+  }
+
+  .controls__scale {
+    position: relative;
+    height: 48px;
+    padding-top: 45px;
+    padding-left: 93px;
+    padding-right: 166px;
+  }
+
+  .controls__toggle {
+    position: absolute;
+    top: 42px;
+    left: 200px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .controls__buttons {
+    height: 93px;
+    margin-top: -93px;
+    position: absolute;
+    background-color: transparent;
+    z-index: 10;
+  }
+
+  .controls__button {
+    margin-top: 36px;
+    margin-bottom: 37px;
+  }
+
+  .controls__button--replay {
+    margin-left: 35px;
+  }
+
+  .controls__button--subtitles {
+   margin-left: 473px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls {
+    width: 800px;
+    margin-top: -93px;
+    position: absolute;
+  }
+
+  .controls__button--subtitles {
+    margin-left: 624px;
+  }
+}

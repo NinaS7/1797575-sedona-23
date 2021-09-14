@@ -1,6 +1,12 @@
 .post {
   font-size: 14px;
   line-height: 24px;
+  margin: 22px 20px 15px;
+}
+
+.post__text h3 {
+  margin: 0;
+  margin-top: 11px;
 }
 
 .post__text p {
@@ -10,12 +16,25 @@
 
 .post__likes {
   font-weight: 700;
-  display: flex;
+  margin-top: 13px;
 }
 
-.post__likes img {
+.post__likes-icon {
+  border: 0;
+  background-color: transparent;
   width: 23px;
   height: 21px;
+  padding: 0;
+  margin-right: 14px;
+  position: relative;
+}
+
+.post__likes-icon::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-image: url("../img/like-mobile.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -24,17 +43,62 @@
   }
 
   .post__text {
-    background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 80px;
   }
+
+  .post__text h3 {
+    font-size: 14px;
+    margin-top: 16px;
+    padding-left: 20px;
+  }
+
+  .post__text p {
+    padding-left: 20px;
+  }
+
+  .post__likes {
+    display: flex;
+    margin-top: 30px;
+    margin-left: auto;
+    padding-right: 35px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .post {
+    position: relative;
+  }
+
   .post__text {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .post__text h3 {
+    padding-left: 21px;
+  }
+
+  .post__text p {
+    padding-left: 21px;
+  }
+
+  .post__likes {
+    padding-right: 50px;
+  }
+
+  .post__likes-icon {
+    position: relative;
+  }
+
+  .post__likes-icon::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/like-desktop.svg");
   }
 }
