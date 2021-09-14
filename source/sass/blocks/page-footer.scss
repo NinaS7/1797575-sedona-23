@@ -38,3 +38,13 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    border: none;
+  }
+
+  .page-footer__wrapper {
+    border: none;
+  }
+}

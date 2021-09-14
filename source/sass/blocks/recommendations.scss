@@ -1,6 +1,6 @@
 .recommendations {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .recommendations__list {
@@ -22,7 +22,7 @@
   height: 37px;
   left: 22px;
   top: -8px;
-  background-image: url(../img/icon-house.svg);
+  background-image: url("../img/icon-house.svg");
 }
 
 .recommendations__item--souvenirs::before {
@@ -32,7 +32,7 @@
   height: 38px;
   left: 25px;
   top: -10px;
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
 }
 
 .recommendations__item--food::before {
@@ -42,7 +42,7 @@
   height: 35px;
   left: 18px;
   top: -5px;
-  background-image: url(../img/icon-burger.svg);
+  background-image: url("../img/icon-burger.svg");
 }
 
 .recommendations__title {
@@ -82,6 +82,7 @@
     height: 72px;
     top: 60px;
     left: 90px;
+    background-image: url("../img/icon-house-tablet.svg");
   }
 
   .recommendations__item--food {
@@ -97,6 +98,7 @@
     height: 68px;
     top: 65px;
     left: 90px;
+    background-image: url("../img/icon-burger-tablet.svg");
   }
 
   .recommendations__item--souvenirs {
@@ -112,6 +114,7 @@
     height: 75px;
     top: 55px;
     left: 95px;
+    background-image: url("../img/icon-gift-tablet.svg");
   }
 
   .recommendations__title {
