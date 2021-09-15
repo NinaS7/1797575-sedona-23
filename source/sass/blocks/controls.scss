@@ -40,6 +40,15 @@
   background-color: transparent;
   margin-top: 23px;
   margin-bottom: 23px;
+  cursor: pointer;
+}
+
+.controls__button:hover path {
+  fill: #333333;
+}
+
+.controls__button:active path {
+  fill: rgba(51, 51, 51, 0.3);
 }
 
 .controls__button--replay {
@@ -47,7 +56,6 @@
   height: 20px;
   padding: 0;
   margin-left: 25px;
-  background-image: url("../img/replay.svg");
 }
 
 .controls__button--subtitles {
@@ -55,7 +63,6 @@
   height: 20px;
   padding: 0;
   margin-left: 133px;
-  background-image: url("../img/subtitles.svg");
 }
 
 .controls__button--fullscreen {
@@ -63,7 +70,6 @@
   height: 20px;
   padding: 0;
   margin-left: 31px;
-  background-image: url("../img/fullscreen.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -100,6 +106,19 @@
   .controls__button {
     margin-top: 36px;
     margin-bottom: 37px;
+
+  }
+
+  .controls__button path {
+    fill: #ffffff;
+  }
+
+  .controls__button:hover path{
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .controls__button:active path{
+    fill: rgba(255, 255, 255, 0.3);
   }
 
   .controls__button--replay {

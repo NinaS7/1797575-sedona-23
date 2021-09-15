@@ -13,10 +13,11 @@
   color: #000000;
 }
 
-.copyright__link:hover {
-  color: #81b3d2;
+.copyright__link:hover path {
+  opacity: 1;
+  fill: #81b3d2;
 }
 
-.copyright__link:active {
-  opacity: 0.3;
+.copyright__link:active path{
+  fill: rgba(0, 0, 0, 0.3);
 }
