@@ -24,6 +24,10 @@
   background-color: #81b3d3;
 }
 
+.map__frame {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     margin: 0;

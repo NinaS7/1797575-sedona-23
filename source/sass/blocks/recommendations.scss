@@ -20,9 +20,9 @@
   position: absolute;
   width: 39px;
   height: 37px;
-  left: 22px;
-  top: -8px;
-  background-image: url("../img/icon-house.svg");
+  left: 21px;
+  top: -10px;
+  background-image: url("../img/icon-house-mobile.svg");
 }
 
 .recommendations__item--souvenirs::before {
@@ -32,7 +32,7 @@
   height: 38px;
   left: 25px;
   top: -10px;
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/icon-gift-mobile.svg");
 }
 
 .recommendations__item--food::before {
@@ -42,7 +42,7 @@
   height: 35px;
   left: 18px;
   top: -5px;
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../img/icon-burger-mobile.svg");
 }
 
 .recommendations__title {
@@ -50,6 +50,7 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .recommendations__description {
@@ -62,7 +63,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     margin: 0;
-    margin-bottom: 59px;
+    margin-bottom: 45px;
   }
 
   .recommendations__item {
@@ -96,8 +97,8 @@
     position: absolute;
     width: 76px;
     height: 68px;
-    top: 65px;
-    left: 90px;
+    top: 63px;
+    left: 89px;
     background-image: url("../img/icon-burger-tablet.svg");
   }
 
@@ -112,13 +113,14 @@
     position: absolute;
     width: 64px;
     height: 75px;
-    top: 55px;
+    top: 57px;
     left: 95px;
     background-image: url("../img/icon-gift-tablet.svg");
   }
 
   .recommendations__title {
     font-size: 21px;
+    margin-bottom: 24px;
   }
 
   .recommendations__description {
@@ -134,7 +136,7 @@
 
 @media (min-width: $desktop-width) {
   .recommendations__list {
-    margin-bottom: 80px;
+    margin-bottom: 65px;
   }
 
   .recommendations__item--housing {
@@ -161,8 +163,8 @@
     position: absolute;
     width: 76px;
     height: 68px;
-    top: 65px;
-    left: 168px;
+    top: 62px;
+    left: 160px;
   }
 
   .recommendations__item--souvenirs {
@@ -176,6 +178,6 @@
     width: 64px;
     height: 75px;
     top: 55px;
-    left: 160px;
+    left: 166px;
   }
 }

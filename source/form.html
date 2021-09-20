@@ -50,6 +50,7 @@
         <p class="intro__text">Помогите нашим отелям стать лучше! <br>Оставьте отзыв о&nbsp;них, а также о <br>посещенных вами <br>достопримечательностях</p>
       </section>
       <section class="form-comment">
+        <h3 class="visually-hidden">Поля формы</h3>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__part part-name">
             <legend class="part-name__heading">Представьтесь:</legend>
@@ -93,15 +94,15 @@
             <legend class="part-impression__heading">Ваше общее впечатление:</legend>
             <ul class="part-impression__list">
               <li class="part-impression__item">
-                <input class=" visually-hidden part-impression__input-radio" id="positive" type="radio" name="positive" checked>
+                <input class=" visually-hidden part-impression__input-radio" id="positive" type="radio" name="impression" checked>
                 <label for="positive">Скорее положительное</label>
               </li>
               <li class="part-impression__item">
-                <input class="visually-hidden part-impression__input-radio" id="negative" type="radio" name="negative">
+                <input class="visually-hidden part-impression__input-radio" id="negative" type="radio" name="impression">
                 <label for="negative">Скорее отрицательное</label>
               </li>
               <li class="part-impression__item">
-                <input class="visually-hidden part-impression__input-radio" id="difficult" type="radio" name="difficult">
+                <input class="visually-hidden part-impression__input-radio" id="difficult" type="radio" name="impression">
                 <label for="difficult">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -133,7 +134,7 @@
             <textarea class="part-emotions__comment" id="comment" name="comment" rows="6">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить отзыв</button>
-          <span class="form__legend">* - обязательные поля</span>
+          <span class="form__legend">* &#8212; обязательные поля</span>
         </form>
       </section>
     </main>
@@ -193,7 +194,7 @@
       </div>
     </section>
 
-    <script src="js/search.min.js"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>

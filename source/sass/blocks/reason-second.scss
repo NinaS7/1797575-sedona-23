@@ -15,7 +15,10 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
+}
 
+.reason-second__namber {
+  margin-bottom: 16px;
 }
 
 .reason-second__description {
@@ -38,6 +41,10 @@
   .reason-second__title {
     font-size: 21px;
   }
+
+  .reason-second__namber {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: $desktop-no-width) {
@@ -48,8 +55,9 @@
 
 @media (min-width: $desktop-width) {
   .reason-second__info {
-    width: 256px;
-    margin: 51px 78px 53px 79px;
+    width: 258px;
+    margin: 0;
+    padding: 51px 70px 53px;
   }
 
   .reason-second__image {

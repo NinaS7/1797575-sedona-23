@@ -13,7 +13,7 @@
 
 .reasons__item {
   margin: 0 20px;
-  padding: 25px 15px 24px;
+  padding: 25px 15px 12px;
   border-bottom: 1px solid #d6d6d6;
 }
 
@@ -57,6 +57,10 @@
   }
   .reasons__title {
     font-size: 21px;
+  }
+
+  .reasons__namber {
+    margin-bottom: 23px;
   }
 }
 

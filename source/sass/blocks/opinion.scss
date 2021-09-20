@@ -10,6 +10,7 @@
   line-height: 26px;
   font-weight: 700;
   margin-top: 32px;
+  margin-bottom: 33px;
 }
 
 .opinion__info {
@@ -35,5 +36,15 @@
 
   .opinion__info {
     margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .opinion__slogan {
+    margin-top: 55px;
+  }
+
+  .opinion__info {
+    margin-bottom: 42px;
   }
 }

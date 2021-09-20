@@ -11,12 +11,13 @@
   line-height: 24px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .search__button {
   width: 280px;
-  padding: 15px 32px 17px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   display: block;
   margin: 0 auto;
   margin-bottom: 49px;
@@ -42,22 +43,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .search {
-    width: 435px;
-    margin: 0 auto;
-  }
-
   .search__question {
     font-size: 30px;
     margin-top: 58px;
   }
 
   .search__info {
-    margin-bottom: 37px;
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .search__button {
     width: 458px;
+    margin: 0 auto;
     margin-bottom: 58px;
   }
 }
@@ -65,5 +64,9 @@
 @media (min-width: $desktop-width) {
   .search__button {
     margin-bottom: 66px;
+  }
+
+  .search__info {
+    margin-bottom: 45px;
   }
 }
