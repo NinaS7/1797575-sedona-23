@@ -5,7 +5,7 @@
 .part-name__heading {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   padding-top: 20px;
 }
 
@@ -22,31 +22,30 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
-
 }
 
 .part-name__text input {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  padding-top: 18px;
-  padding-bottom: 14px;
-  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 23px;
 }
 
 .part-name__name {
   width: 67px;
-  padding-right: 141px;
+  padding-right: 144px;
 }
 
 .part-name__surname {
   width: 88px;
-  padding-right: 82px;
+  padding-right: 85px;
 }
 
 .part-name__patronymic {
   width: 152px;
-  padding-right: 20px;
+  padding-right: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,7 +60,8 @@
   .part-name__heading {
     font-size: 21px;
     text-align: left;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
+    padding-top: 41px;
   }
 
   .part-name input {
@@ -84,6 +84,10 @@
 @media (min-width: $desktop-width) {
   .part-name {
     padding-left: 79px;
+  }
+
+  .part-name input {
+    margin-left: 12px;
   }
 
   .part-name__name {

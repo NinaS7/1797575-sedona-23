@@ -5,7 +5,7 @@
 .part-place__heading {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 16px;
   margin-bottom: 36px;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .part-place__item:last-child {
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 }
 
 .part-place__item label {
@@ -34,7 +34,7 @@
   width: 46px;
   height: 46px;
   left: 0;
-  top: -20px;
+  top: -16px;
   border: 5px solid #f2f2f2;
   border-radius: 10%;
   background-color: #f2f2f2;
@@ -46,11 +46,29 @@
   position: absolute;
   width: 24px;
   height: 17px;
-  left: 18px;
-  top: 0;
+  left: 15px;
+  top: 5px;
   background-image: url(../img/tick.svg);
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.part-place__input-checkbox:hover+label::before,
+.part-place__input-checkbox:focus+label::before,
+.part-place__input-checkbox:checked:hover+label::before,
+.part-place__input-checkbox:checked:focus+label::before {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.part-place__input-checkbox:active+label::before,
+.part-place__input-checkbox:checked:active+label::before {
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+
+.part-place__input-checkbox:checked:active+label::after {
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,7 +76,7 @@
     width: 648px;
     order: 4;
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
   }
 
   .part-place__heading {
@@ -74,7 +92,7 @@
     position: absolute;
     width: 123px;
     height: 1px;
-    top: 22px;
+    top: 25px;
     right: 355px;
     background-color: #dbdbdb;
   }
@@ -84,7 +102,7 @@
     position: absolute;
     width: 123px;
     height: 1px;
-    top: 20px;
+    top: 25px;
     left: 355px;
     background-color: #dbdbdb;
   }
@@ -97,7 +115,19 @@
   }
 
   .part-place__item {
-    width: 260px;
+    width: 265px;
+    text-align: center;
+    margin-bottom: 63px;
+  }
+
+   .part-place__item--park label {
+    padding-left: 68px;
+  }
+
+  .part-place__item--park label::before {
+    content: "";
+    position: absolute;
+    left: -13px;
   }
 }
 
@@ -121,7 +151,7 @@
     content: "";
     position: absolute;
     width: 280px;
-    top: 20px;
+    top: 25px;
     left: 365px;
   }
 
@@ -134,7 +164,11 @@
     width: 230px;
   }
 
-  .part-place__item:last-child {
-    text-align: end;
+  .part-place__item:first-child label {
+    margin-left: -38px;
+  }
+
+  .part-place__item:last-child label {
+    margin-left: 24px;
   }
 }

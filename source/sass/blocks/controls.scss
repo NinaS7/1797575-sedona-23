@@ -32,7 +32,6 @@
   height: 66px;
   background-color: #f2f2f2;
   display: flex;
-
 }
 
 .controls__button {
@@ -43,11 +42,11 @@
   cursor: pointer;
 }
 
-.controls__button:hover path {
+.controls__icon:hover {
   fill: #333333;
 }
 
-.controls__button:active path {
+.controls__icon:active {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -92,7 +91,7 @@
   .controls__toggle {
     position: absolute;
     top: 42px;
-    left: 200px;
+    left: 206px;
     width: 10px;
     height: 10px;
   }
@@ -110,16 +109,16 @@
     margin-bottom: 37px;
   }
 
-  .controls__button path {
+  .controls__icon {
     fill: #ffffff;
-  }
 
-  .controls__button:hover path {
-    fill: rgba(255, 255, 255, 0.6);
-  }
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
 
-  .controls__button:active path {
-    fill:rgba(255, 255, 255, 0.3);
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .controls__button--replay {

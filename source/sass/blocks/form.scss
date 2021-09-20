@@ -35,7 +35,7 @@
   width: 280px;
   margin: 0 20px;
   margin-bottom: 48px;
-  padding:18px 33px 14px 32px;
+  padding: 18px 33px 14px 32px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -58,9 +58,7 @@
   .form__button {
     order: 6;
     width: 324px;
-    padding: 0;
-    padding-top: 18px;
-    padding-bottom: 14px;
+    padding: 18px 10px 14px 0;
     margin: 0;
     margin-bottom: 61px;
   }
@@ -69,7 +67,7 @@
     display: block;
     order: 7;
     margin-left: auto;
-    margin-top: 17px;
+    margin-top: 20px;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -80,5 +78,6 @@
   .form__button {
     width: 480px;
     margin-bottom: 66px;
+    padding: 16px 0 14px;
   }
 }

@@ -7,6 +7,24 @@
   position: relative;
 }
 
+.main-nav__wrapper {
+  position: relative;
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.main-nav__logo img {
+  width: 102px;
+  height: 84px;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 17px;
@@ -31,7 +49,8 @@
   box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 
-.main-nav--closed .main-nav__toggle:hover::before {
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
   background-color: fade(#81b3d2, 60%);
   box-shadow: 0 9px 0 0 fade(#81b3d2, 60%), 0 18px 0 0 fade(#81b3d2, 60%);
 }
@@ -41,17 +60,15 @@
   box-shadow: 0 9px 0 0 fade(#81b3d2, 30%), 0 18px 0 0 fade(#81b3d2, 30%);
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav__list {
-    display: none;
-  }
-}
-
 .main-nav--opened {
   position: absolute;
   top: 0;
   z-index: 10;
   width: 100%;
+}
+
+.main-nav--opened .main-nav__logo {
+  display: none;
 }
 
 .main-nav--opened::after {
@@ -89,7 +106,9 @@
   }
 
   &:hover::before,
-  &:hover::after {
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
     background-color: fade(#ffffff, 60%);
   }
 
@@ -97,18 +116,6 @@
   &:active::after {
     background-color: fade(#ffffff, 30%);
   }
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs .main-nav__list {
-  position: static;
-}
-
-.main-nav--nojs .main-nav__item {
-  display: block;
 }
 
 .main-nav__list {
@@ -142,6 +149,30 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__logo {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    position: static;
+    order: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
   }
 }
 
@@ -188,13 +219,18 @@
   .main-nav__item--current a {
     color: #766357;
   }
-}
 
-.main-nav--opened::after {
-  display: none;
+  .main-nav--opened::after {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__logo img {
+    width: 187px;
+    height: 97px;
+  }
+
   .main-nav__item {
     width: 239px;
   }

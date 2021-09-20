@@ -1,5 +1,5 @@
 .part-contacts {
-  padding-bottom: 14px;
+  padding-bottom: 17px;
 }
 
 .part-contacts__heading {
@@ -7,12 +7,11 @@
   text-align: center;
   margin-bottom: 17px;
   padding-top: 20px;
-
 }
 
 .part-contacts__text {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   position: relative;
 }
 
@@ -26,7 +25,7 @@
 
 .part-contacts__text input {
   font-weight: 700;
-  padding-top: 18px;
+  padding-top: 17px;
   padding-bottom: 14px;
   padding-left: 22px;
   line-height: 26px;
@@ -51,7 +50,7 @@
   border: none;
   border-radius: 0;
   position: absolute;
-  margin-top: 8px;
+  margin-top: 7px;
   cursor: pointer;
 }
 
@@ -61,13 +60,14 @@
     padding: 0;
     border: none;
     margin-bottom: 27px;
-    margin-top: 72px;
+    margin-top: 46px;
   }
 
   .part-contacts__heading {
     font-size: 21px;
     position: relative;
     padding: 0;
+    margin-bottom: 20px;
   }
 
   .part-contacts__heading::before {
@@ -107,8 +107,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .part-contacts {
+    width: 960px;
+    margin-top: 43px;
+  }
+
   .part-contacts__heading {
-    margin-bottom: 71px;
+    margin-bottom: 67px;
     margin-top: 70px;
     position: relative;
   }
@@ -129,7 +134,7 @@
   }
 
   .part-contacts__text {
-    width: 470px;
+    width: 480px;
   }
 
   .part-contacts__text label {
@@ -141,10 +146,10 @@
   }
 
   .part-contacts__phone {
-    width: 257px;
+    width: 235px;
   }
 
   .part-contacts__mail {
-    width: 258px;
+    width: 237px;
   }
 }

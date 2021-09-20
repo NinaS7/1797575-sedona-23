@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   position: relative;
 
-  @media (min-resolution: 2dpxx) {
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/back-form-mobile@2x.jpg");
     background-size: 320px auto;
   }
@@ -37,7 +37,7 @@
     height: 291px;
     background-image: url("../img/back-form-tablet.jpg");
 
-    @media (min-resolution: 2dpxx) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/back-form-tablet@2x.jpg");
       background-size: 768px auto;
     }
@@ -62,7 +62,7 @@
     height: 301px;
     background-image: url("../img/back-form-desktop.jpg");
 
-    @media (min-resolution: 2dpxx) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/back-form-desktop@2x.jpg");
       background-size: 1200px auto;
     }

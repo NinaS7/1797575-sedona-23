@@ -6,7 +6,7 @@
   font-size: 18px;
   line-height: 26px;
   margin-top: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -36,11 +36,12 @@
   .video__title {
     font-size: 30px;
     margin-top: 59px;
+    margin-bottom: 32px;
   }
 
   .video__text {
     width: 445px;
-    margin-bottom: 68px;
+    margin-bottom: 80px;
   }
 
   .video__player {
@@ -53,6 +54,14 @@
   .video {
     width: 800px;
     margin-bottom: 85px;
+  }
+
+  .video__title {
+    margin-bottom: 36px;
+  }
+
+  .video__text {
+    margin-bottom: 78px;
   }
 
   .video__player {

@@ -4,7 +4,13 @@
   margin: 22px 20px 15px;
 }
 
+.post__link img {
+  width: 280px;
+  height: 280px;
+}
+
 .post__text h3 {
+  font-size: 14px;
   margin: 0;
   margin-top: 11px;
 }
@@ -16,7 +22,7 @@
 
 .post__likes {
   font-weight: 700;
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 .post__likes-icon {
@@ -26,13 +32,18 @@
   width: 23px;
   height: 21px;
   padding: 0;
-  margin-right: 14px;
+  margin-right: 10px;
 }
 
 
 @media (min-width: $tablet-width) {
   .post {
     margin: 0;
+  }
+
+  .post__link img {
+    width: 324px;
+    height: 267px;
   }
 
   .post__text {
@@ -56,13 +67,17 @@
     display: flex;
     margin-top: 30px;
     margin-left: auto;
-    padding-right: 35px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .post {
     position: relative;
+  }
+
+  .post__link img {
+    width: 400px;
   }
 
   .post__text {
@@ -82,7 +97,7 @@
   }
 
   .post__likes {
-    padding-right: 50px;
+    padding-right: 31px;
   }
 
   .post__likes-icon {
